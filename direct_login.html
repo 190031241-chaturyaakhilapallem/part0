@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url('/media/register_img.jpg');
+}
+
+/* Style the header */
+.header {
+  background-color: #ffcc66;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.button {
+  background-color: #00cc99;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+</style>
+<title>User-Login</title>
+<body>
+<div class="topnav">
+  <a href="{% url 'userpage' %}">MainPage</a>
+    <a href="{% url 'user_register' %}">Register</a>
+
+</div>
+
+
+
+<center>
+<div>
+        <form method="POST" action="{% url 'direct_login' %}">
+            {% csrf_token %}
+            <fieldset >
+                <legend class="border-bottom mb-4"><font size = "+3">User-Login</font></legend><br>
+                Username<input type="text" name="srch" placeholder="Enter Username"><br><br>
+                Password<input type="password" name="srch2" placeholder="Enter Password">
+            </fieldset>
+            <div >
+                <button class="btn btn-outline-info button" type="submit">Login</button>
+                <p>Forgot Password</p>
+                <a href="{% url 'recover_link' %}">Click Here!</a>
+<!--                <a href="{% url 'forgot' %}">Click Here!</a>-->
+            </div>
+        </form>
+</div>
+    </center>
+</body>
+</html>

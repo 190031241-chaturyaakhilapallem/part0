@@ -1,0 +1,798 @@
+<!--{% load static %}-->
+<html>
+<head>
+  <title>Travel Tourism and Hospitality</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!--     <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">-->
+<!--<link-->
+<!--      rel="stylesheet"-->
+<!--      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"-->
+<!--      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"-->
+<!--      crossorigin="anonymous"-->
+<!--    />-->
+<!--    <link-->
+<!--      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap"-->
+<!--      rel="stylesheet"-->
+<!--    />-->
+
+</head>
+<style>
+.jumbotron {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+p{
+font-size: 18px;
+}
+
+.col-sm-4 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h3
+{
+text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+h2{
+text-align: center;
+}
+p{
+text-align: center;
+}
+
+img {
+  border: 5px solid #555;
+}
+
+
+body {
+  background-image: url('media/background.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #FFA07A;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+h2
+{
+text-align: center;
+}
+a.one:link, a.one:visited{
+  background-color: #A93227 ;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.one:hover, a.one:active {
+  background-color: #E15D50;
+}
+a.two:hover, a.two:active{
+background-color: #040404;
+}
+a.two:visited{
+  background-color: #BF372A ;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.img1 {
+vertical-align: middle;
+border: 5px solid #555;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 10%;
+}
+.img2 {
+vertical-align: middle;
+border: 5px solid #555;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+   width: 50%;
+  height: 10%;
+}
+.feedback
+{
+color: black;
+font-size:40px;
+}
+.feed
+{
+font-size: 20px;
+font-family:Times;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*----------------NAVBAR------------*/
+header {
+  display: flex;
+  justify-content: space-between;
+  color: #ffce14;
+  background: #0f2453;
+}
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "roboto";
+  margin: 0 2rem;
+}
+header div i {
+  font-size: 2rem;
+  margin: 1rem;
+}
+header nav {
+  padding: 1rem 2rem;
+}
+nav ul li {
+  list-style: none;
+  display: inline;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+nav li a {
+  padding: 1rem;
+  margin: 1rem;
+  text-decoration: none;
+  color: white;
+  transition: all 250ms ease-in;
+}
+nav li a:hover {
+  background: #ffce14;
+  color: black;
+}
+/*-------------TOP SECTION-------------*/
+.titles {
+  color: black;
+  text-align: center;
+  width: 50vw;
+  margin: 0 auto;
+}
+.titles h1 {
+  font-family: "roboto";
+  font-size: 5rem;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 0 black;
+  color: #ffce14;
+}
+.titles p {
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 0 black;
+}
+/*-------------BOTTOM SECTION-----------*/
+.container-boxes {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  max-width: 100vw;
+}
+.box {
+  background: #ffce14;
+  margin: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 350px;
+min-width:350px;
+  max-height: 210px;
+  min-height: 210px;
+  transition: all 250ms ease-out;
+}
+.box:hover {
+  background: rgba(255, 255, 255, 0.7);
+  transform: translateY(-20%);
+}
+.box a {
+  text-decoration: none;
+  color: black;
+}
+.icon {
+  font-size: 3rem;
+  padding: 1rem;
+}
+.text h3 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 0;
+  color: black;
+}
+.text p {
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  text-align: left;
+}
+.text {
+  padding: 0.5rem;
+}
+
+/*------MEDIAQUERIES-------*/
+@media (max-width: 1160px) {
+  .icon {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+  .text h3 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+  .text p {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    text-align: left;
+    font-size: 0.8rem;
+  }
+  nav li a:hover {
+    background: none;
+    color: black;
+  }
+}
+@media (max-width: 850px) {
+  body {
+    height: 100%;
+  }
+  .container-boxes {
+    flex-direction: column;
+  }
+  .box:hover {
+    background: rgba(300, 255, 255, 0.7);
+    transform: none;
+  }
+  .titles h1 {
+    font-size: 3rem;
+  }
+}
+.acf{
+width: 80%;
+height: 80%;
+
+}
+
+</style>
+<body>
+
+<center>
+<h2>UP THE SKY</h2>
+<p>THE PERFECT TOUR GUIDE!!</p>
+<div class="explore">
+<a class="one" href="#main">Explore Now!</a>
+</div>
+<br>
+<!--<div class="slideshow-container">-->
+
+<!--  <div class="mySlides fade">-->
+
+<!--  <img class="img4" src="{{ '/media/11.jpg' }}"  style="width:80%">-->
+
+<!--</div>-->
+
+<!--<div class="mySlides fade">-->
+
+<!--  <img  class="img4" src="{{ '/media/1.jpeg' }}"  width="700" height="500">-->
+
+<!--</div>-->
+
+<!--<div class="mySlides fade">-->
+
+<!--  <img  class="img4" src="{{ '/media/222.jpeg' }}"  width="700" height="500">-->
+
+<!--</div>-->
+
+<!--<div class="mySlides fade">-->
+
+<!--  <img  class="img4" src="{{ '/media/3.jpeg' }}"  width="700" height="500">-->
+
+<!--</div>-->
+
+<!--<div class="mySlides fade">-->
+
+<!--  <img  class="img4" src="{{ '/media/4.jpg' }}"  width="700" height="500">-->
+
+<!--</div>-->
+
+<!--  <div class="mySlides fade ">-->
+
+<!--  <img class="img4"  src="{{ '/media/5.jpeg' }}" width="700" height="500">-->
+
+<!--</div>-->
+
+<!--  <div class="mySlides fade">-->
+
+<!--  <img  class="img4" src="{{ '/media/6.jpg' }}"  width="700" height="500">-->
+
+<!--</div>-->
+<!--</div>-->
+   <div class="slideshow-container">
+
+  <div class="mySlides fade">
+
+  <img src="{{ '/media/11.jpg' }}"  style="width:80%">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="{{ '/media/1.jpeg' }}"  width="700" height="500">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="{{ '/media/3.jpeg' }}"  width="700" height="500">
+
+</div>
+
+<div class="mySlides fade">
+<!--  <div class="numbertext">3 / 3</div>-->
+ <img src="{{ '/media/4.jpg' }}"  width="700" height="500">
+<!--  <div class="text">Caption Three</div>-->
+</div>
+
+<div class="mySlides fade">
+
+  <img src="{{ '/media/222.jpeg' }}"  width="700" height="500">
+
+</div>
+
+  <div class="mySlides fade">
+
+  <img src="{{ '/media/5.jpeg' }}" width="700" height="500">
+
+</div>
+       <div class="mySlides fade">
+
+  <img src="{{ '/media/6.jpg' }}" width="700" height="500">
+
+</div>
+</div>
+</center>
+<br>
+<div style="text-align:center">
+   <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+    <span class="dot"></span>
+
+</div>
+
+<!--<script>-->
+<!--var slideIndex = 0;-->
+<!--showSlides();-->
+
+<!--function showSlides() {-->
+<!--  var i;-->
+<!--  var slides = document.getElementsByClassName("mySlides");-->
+<!--  var dots = document.getElementsByClassName("dot");-->
+<!--  for (i = 0; i < slides.length; i++) {-->
+<!--    slides[i].style.display = "none";-->
+<!--  }-->
+<!--  slideIndex++;-->
+<!--  if (slideIndex > slides.length) {slideIndex = 1}-->
+<!--  for (i = 0; i < dots.length; i++) {-->
+<!--    dots[i].className = dots[i].className.replace(" active", "");-->
+<!--  }-->
+<!--  slides[slideIndex-1].style.display = "block";-->
+<!--  dots[slideIndex-1].className += " active";-->
+<!--  setTimeout(showSlides, 3000); // Change image every 3 seconds-->
+<!--}-->
+<!--</script>-->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<br><br>
+<div class="jumbotron text-center" id="main">
+ <h2>TRAVEL TOURISM AND HOSPITALITY</h2>
+<div class="container-fluid">
+  <div style='float: right;'>
+      <a href="{% url 'adminpage' %}">
+          <button type="button" class="btn btn-success">ADMIN</button>&nbsp</a>
+      <a href="{% url 'userpage' %}">
+          <button type="button" class="btn btn-success">USER</button></a>
+   </div>
+</div>
+ </div>
+<br><br><br>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+
+                            <a class="two" href="#about">
+
+                                <img class="one acf" src="https://images.unsplash.com/photo-1563906267088-b029e7101114?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWJvdXQlMjB1c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="background-repeat:no-repeat;"/>
+                                 </a>
+                                 <h3>About Us</h3>
+
+</div>
+   <div class="col-sm-4">
+
+                            <a class="two"  href="#contact">
+
+                                <img class="one acf" src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29udGFjdCUyMHVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="background-repeat:no-repeat;"/>
+                                 </a>
+                                 <h3>Contact Us</h3>
+
+</div>
+     <div class="col-sm-4">
+
+                            <a class="two"  href="#feedback">
+
+                                <img class="one acf" src="https://images.unsplash.com/photo-1589187775328-882e91b3db4f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVlZGJhY2t8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="background-repeat:no-repeat;"/>
+                                 </a>
+                                 <h3>Give Feedback</h3>
+
+</div>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="about" id="about">
+<h2>ABOUT US</h2>
+<img class="img2" src="{{ '/media/about_img.jpg' }}">
+      <section class="titles">
+      <h1>UP THE SKY</h1>
+      <p>
+        COME WITH US AND EXPERIENCE THE WORLD'S MOST BEAUTIFUL PLACES. WITH A PERFECT TOUR GUIDE.
+      </p>
+    </section>
+<br><br>
+<div class="container-boxes">
+      <div class="box">
+        <div class="icon">
+          <a href=""><i class="fas fa-book"></i></a>
+        </div>
+<h3>UNIQUENESS</h3>
+        <p>'UPTHESKY’ works intimately with the Ministry of Tourism, Government of India.</p>
+      </div>
+      <div class="box">
+        <div class="icon">
+          <a href=""><i class="fas fa-plane"></i></a>
+        </div>
+        <h3>WHAT TO EXPECT</h3>
+            <p>Travel With Us And Explore The World Of Adventures.</p>
+      </div>
+      <div class="box">
+        <div class="icon">
+          <a href=""><i class="fas fa-address-card"></i></a>
+        </div>
+         <h3>MOTTO</h3>
+            <p>“We, at ‘up the sky’, swear by this and put stock in satisfying travel dreams that make you perpetually rich constantly. </p>
+
+      </div>
+
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="contact" id="contact">
+<h2>CONTACT US</h2>
+<img class="img1" src="{{ '/media/contact_img.jpg' }}">
+
+<strong>
+    <p><font color="orange" size="06">PHONE:0486-23456</font></p>
+    <p><font color="darkgreen" size="06">CELL&nbsp;&nbsp;&nbsp;:9786913313</font></p>
+<p><font color="blue" size="06">EMAIL:&nbsp;upthesky@gmail.com</font></p></strong>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="feedback" id="feedback">
+<h2>GIVE FEEDBACK</h2>
+<img class="img2" src="{{ '/media/feedback_img.jpg' }}">
+<div class="feed">
+<form class="f1" action="">
+<div>
+    <center><h3><marquee>We Would like to hear from you! Please take a moment to share your experience with us</marquee></h3></center></marquee>
+    <center>
+    <table>
+    <tr>
+        <br>
+    <th> NAME:<input type="text"name="username" size="20"/></th>
+    <th>E-MAIL:<input type="text"name="e-mail" size="18"/></th>
+     <th>PHONE:<input type="numbers"name="phone" size="23"/></th>
+</tr>
+    </table>
+</center>
+
+<center><h3>How is your experience with "UPTHESKY" :</h3>
+<input type="radio" name="g1"/>EXCELLENT
+<input type="radio" name="g1"/>VERY GOOD
+<input type="radio" name="g1">GOOD
+    <input type="radio" name="g1"/>POOR<br></center>
+<br>
+    <center> YOUR COMMENT <br/><br/></center>
+    <center><textarea name="d8" rows="10" cols="40"></textarea></center>
+
+<center><h3>Will you suggest our website to your friend:</h3></center>
+<center><input type="radio" name="yes" value="yes"/>Yes</center>
+<center><input type="radio" name="no" value="no"/>No</center>
+<center><input type="submit" name="g2" value="SUBMIT"/><br/><br/></center>
+
+
+</div>
+</form>
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</div></body>
+</html>
+
+
+<!--{% load static %}-->
+<!--<html>-->
+<!--<head>-->
+<!--  <title>Travel Tourism and Hospitality</title>-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+<!--<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<center>-->
+<!--<h2>UP THE SKY</h2>-->
+<!--<p>THE PERFECT TOUR GUIDE!!</p>-->
+<!--<div class="explore">-->
+<!--<a class="one" href="#main">Explore Now!</a>-->
+<!--</div>-->
+<!--<br>-->
+<!--<div class="slideshow-container">-->
+
+<!--  <div class="mySlides fade">-->
+
+<!--  <img class="img4" src="{{ '/media/11.jpg' }}"   style="width:80%">-->
+
+<!--</div>-->
+
+<!--<div class="mySlides fade">-->
+
+<!--  <img src="{{ '/media/1.jpeg' }}"   width="700" height="500">-->
+
+<!--</div>-->
+
+<!--<div class="mySlides fade">-->
+
+<!--  <img src="{{ '/media/222.jpeg' }}"   width="700" height="500">-->
+
+<!--</div>-->
+
+<!--<div class="mySlides fade">-->
+
+<!--  <img src="{{ '/media/3.jpeg' }}"   width="700" height="500">-->
+
+<!--</div>-->
+
+<!--<div class="mySlides fade">-->
+
+<!--  <img src="{{ '/media/4.jpg' }}"   width="700" height="500">-->
+
+<!--</div>-->
+
+<!--  <div class="mySlides fade ">-->
+
+<!--  <img src="{{ '/media/5.jpeg' }}"  width="700" height="500">-->
+
+<!--</div>-->
+
+<!--  <div class="mySlides fade">-->
+
+<!--  <img src="{{ '/media/6.jpg' }}"   width="700" height="500">-->
+
+<!--</div>-->
+<!--</div>-->
+<!--</center>-->
+<!--<br>-->
+<!--<div style="text-align:center">-->
+<!--   <span class="dot"></span>-->
+<!--  <span class="dot"></span>-->
+<!--  <span class="dot"></span>-->
+<!--  <span class="dot"></span>-->
+<!--  <span class="dot"></span>-->
+<!--  <span class="dot"></span>-->
+<!--  <span class="dot"></span>-->
+<!--</div>-->
+
+<!--<script>-->
+<!--var slideIndex = 0;-->
+<!--showSlides();-->
+
+<!--function showSlides() {-->
+<!--  var i;-->
+<!--  var slides = document.getElementsByClassName("mySlides");-->
+<!--  var dots = document.getElementsByClassName("dot");-->
+<!--  for (i = 0; i < slides.length; i++) {-->
+<!--    slides[i].style.display = "none";-->
+<!--  }-->
+<!--  slideIndex++;-->
+<!--  if (slideIndex > slides.length) {slideIndex = 1}-->
+<!--  for (i = 0; i < dots.length; i++) {-->
+<!--    dots[i].className = dots[i].className.replace(" active", "");-->
+<!--  }-->
+<!--  slides[slideIndex-1].style.display = "block";-->
+<!--  dots[slideIndex-1].className += " active";-->
+<!--  setTimeout(showSlides, 3000); // Change image every 3 seconds-->
+<!--}-->
+<!--</script>-->
+<!--<br><br>-->
+<!--<div class="jumbotron text-center" id="main">-->
+<!-- <h2>TRAVEL TOURISM AND HOSPITALITY</h2>-->
+<!--<div class="container-fluid">-->
+<!--  <div style='float: right;'>-->
+<!--  <button type="button" class="btn btn-success">ADMIN</button>&nbsp-->
+<!--<button type="button" class="btn btn-success">USER</button>-->
+<!--   </div>-->
+<!--</div>-->
+<!-- </div>-->
+<!--<br><br><br>-->
+<!--</div>-->
+
+<!--<div class="container">-->
+<!--  <div class="row">-->
+<!--    <div class="col-sm-4">-->
+
+<!--                            <a class="two" href="#about">-->
+
+<!--                                <img class="img-fluid" src="https://images.unsplash.com/photo-1563906267088-b029e7101114?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWJvdXQlMjB1c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="background-repeat:no-repeat;"/>-->
+<!--                                 </a>-->
+<!--                                 <h3>About Us</h3>-->
+
+<!--</div>-->
+<!--   <div class="col-sm-4">-->
+
+<!--                            <a class="two"  href="#contact">-->
+
+<!--                                <img class="img-fluid" src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29udGFjdCUyMHVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="background-repeat:no-repeat;"/>-->
+<!--                                 </a>-->
+<!--                                 <h3>Contact Us</h3>-->
+
+<!--</div>-->
+<!--     <div class="col-sm-4">-->
+
+<!--                            <a class="two"  href="#feedback">-->
+
+<!--                                <img class="img-fluid" src="https://images.unsplash.com/photo-1589187775328-882e91b3db4f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVlZGJhY2t8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="background-repeat:no-repeat;"/>-->
+<!--                                 </a>-->
+<!--                                 <h3>Give Feedback</h3>-->
+
+<!--</div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
+
+<!--<div class="about" id="about">-->
+<!--<h2>ABOUT US</h2>-->
+<!--<p>This is About us page<p>-->
+<!--</div>-->
+<!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
+
+<!--<div class="contact" id="contact">-->
+<!--<h2>CONTACT US</h2>-->
+<!--<p>This is contact us page<p>-->
+<!--</div>-->
+
+<!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
+
+<!--<div class="feedback" id="feedback">-->
+<!--<h2>GIVE FEEDBACK</h2>-->
+<!--<p>This is Feedback page<p>-->
+<!--</div>-->
+
+<!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
+<!--</body>-->
+<!--</html>-->
